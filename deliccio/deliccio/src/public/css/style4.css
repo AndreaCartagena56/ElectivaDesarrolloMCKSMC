@@ -20,8 +20,8 @@ mark, rp, rt, ruby, summary, time {
 	font-size: 18px;
 	color: #ffdede;
 }
-.wrapper a{
-	color: #fffbfb;
+.wrap a{
+	color: #ad0000;
 	font-size: 20px;
 }
 .wrap {
@@ -312,7 +312,7 @@ header {
 }
 .box label{
     font-size: 15px;
-    line-height: 2.5;
+    line-height: 2.0;
 }
 .list1 li a {
 	font-style:italic;
