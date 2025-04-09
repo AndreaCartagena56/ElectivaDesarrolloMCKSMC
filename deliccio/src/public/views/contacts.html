@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Pecados Placenteros</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../css/reset.css" type="text/css" media="all">
+<link rel="stylesheet" href="../css/layout.css" type="text/css" media="all">
+<link rel="stylesheet" href="../css/style3.css" type="text/css" media="all">
+<script src="../js/jquery-1.6.js" ></script>
+<script src="../js/cufon-yui.js"></script>
+<script src="../js/cufon-replace.js"></script>
+<script src="../js/Forum_400.font.js"></script>
+<script src="../js/atooltip.jquery.js"></script>
+<!--[if lt IE 9]>
+<script src="js/html5.js"></script>
+<style type="text/css">.slider_bg {behavior:url("js/PIE.htc")}</style>
+<![endif]-->
+</head>
+<body id="page5">
+<div class="body6">
+  <div class="body1">
+    <div class="main">
+      <!-- header -->
+      <header>
+        <h1><a href="../views/index.html" id="logo"></a></h1>
+        <nav>
+          <ul id="top_nav">
+            <li><a href="../views/index.html"><img src="../images/hogar.png" alt=""></a></li>
+            <li><a href="#"><img src="../images/usuario.png" alt=""></a></li>
+            <li class="end"><a href="../views/contacts.html"><img src="../images/telefono.png" alt=""></a></li>
+          </ul>
+        </nav>
+        <nav>
+          <ul id="menu">
+            <li><a href="../views/index.html">Restaurante</a></li>
+            <li><a href="../views/cuisine.html">Carta</a></li>
+            <li><a href="../views/wine.html">Reservas</a></li>
+            <li><a href="../views/cook-book.html">Nosotros</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- / header -->
+      <!-- content -->
+      <style>
+
+        .container {
+            background:url(../images/bg.jpg);
+            color: #faf3ed;
+            width: 400px; /* Ancho fijo */
+            max-width: 100%; /* Asegura que no se expanda más allá del viewport */
+            box-shadow: 0 0 5px rgba(0, 0, 0, .4);
+            -moz-box-shadow: 0 0 5px rgba(0, 0, 0, .4);
+            -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .4);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 0 auto; /* Centra horizontalmente */
+        }
+        
+        .container > div {
+        background:url(../images/box_top.png) 0 top no-repeat;
+        padding:5px;
+        padding-top:0;
+        overflow:hidden
+        }
+          /* Título */
+          .title {
+            color: #f0d2d2;
+            font-size: 30px;
+           font-weight: bold;
+        margin-bottom: 15px;
+        text-align: center;
+        }
+        
+        /* Etiquetas */
+        label {
+        display: block;
+        font-weight: bold;
+        text-align: left;
+        margin-top: 10px;
+        color: #efd9d9;
+        }
+        
+        /* Inputs y Select */
+        input, select {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        }
+        
+        /* Contenedor de inputs con íconos */
+        .input-container {
+        display: flex;
+        align-items: center;
+        position: relative;
+        }
+        
+        .input-container input {
+        width: 100%;
+        padding-right: 35px;
+        }
+        
+        .input-container .icon {
+        position: absolute;
+        right: 10px;
+        font-size: 18px;
+        pointer-events: none;
+        }
+        
+        /* Botón */
+        .btn {
+        width: 100%;
+        background-color: #e63946;
+        color: white;
+        border: none;
+        padding: 12px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 15px;
+        font-weight: bold;
+        }
+        
+        .btn:hover {
+        background-color: #d52f2f;
+        }
+        
+        .input-with-icon {
+  width: 88%;
+  padding: 10px 10px 10px 40px; /* Espacio para el icono */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background-image: url('../images/login.png'); /* Ruta de la imagen */
+  background-size: 20px; /* Tamaño del icono */
+  background-position: 10px center; /* Posición del icono */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+.input-with-icon1 {
+  width: 88%;
+  padding: 10px 10px 10px 40px; /* Espacio para el icono */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background-image: url('../images/candado.png'); /* Ruta de la imagen */
+  background-size: 20px; /* Tamaño del icono */
+  background-position: 10px center; /* Posición del icono */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+.input-container1 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Alinea el contenido a la izquierda */
+  gap: 0px;
+  margin-left: -350px; 
+}
+.input-container1 label{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Alinea el contenido a la izquierda */
+ 
+  margin-left: -350px; 
+}
+.input-container2 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Alinea el contenido a la izquierda */
+  gap: 0px;
+  margin-left: 120px; 
+}
+         </style>
+         <br>
+      <div class="container">
+        <form id="registrationForm">
+        <h2 class="title">Inicio de sesión</h2>
+      
+        <div class="input_container">
+          <label>Nombre de Usuario</label>
+        
+              <input  class="input-with-icon" type="text" id="Nombre_de_Usuario" name="Nombre_de_Usuario" placeholder="Usuario" required>
+            </div>
+
+            <div class="input_container">
+          <label>Contraseña</label>
+        
+              <input class="input-with-icon1" type="password" id="Contrasena" name=" Contrasena" placeholder="Contraseña" required>
+            </div>
+
+         
+
+        <button type="submit" class="btn">Inicio de sesión</button>
+<br><br>
+        <p style=" display: flex;  margin-left: 100px; ">¿No estás registrado?  <a href="/registro">Regístrate</a></p>
+      </div>
+    </form>
+    
+      <br><br>
+      </div>
+  </div>
+</div>
+<br><br>
+<div class="body3">
+  <div class="body4">
+    <div class="main">
+      <!-- footer -->
+      <footer>
+        <div class="wrapper">
+          <section class="col1 pad_left1">
+            <h3>Celular: <span>3215854365</span></h3>
+            Copyright &copy; <a href="#">Pecados Placenteros</a> All Rights Reserved<br>
+            Design by <a target="_blank" href="http://www.templatemonster.com/">TemplateMonster.com</a></section>
+          <section class="col2 pad_left1">
+            <h3>Siguenos</h3>
+            <ul id="icons">
+              <li><a href="#" class="normaltip"><img src="../images/aplicacion.png" alt=""></a></li>
+              <li><a href="#" class="normaltip"><img src="../images/instagram.png" alt=""></a></li>
+              <li><a href="#" class="normaltip"><img src="../images/facebook.png" alt=""></a></li>
+            </ul>
+          </section>
+        </div>
+        <!-- {%FOOTER_LINK} -->
+      </footer>
+      <!-- / footer -->
+    </div>
+  </div>
+</div>
+<script src="../validationlogin.js"></script>
+</body>
+</html>

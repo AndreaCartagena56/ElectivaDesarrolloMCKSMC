@@ -20,10 +20,11 @@ mark, rp, rt, ruby, summary, time {
 	font-size: 18px;
 	color: #ffdede;
 }
-.wrapper a{
+.wrap a{
 	color: #fffbfb;
 	font-size: 20px;
 }
+
 .wrap {
 	overflow:hidden;
 	width:965px;

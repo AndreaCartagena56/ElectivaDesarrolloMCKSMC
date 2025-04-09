@@ -1,16 +1,21 @@
 const express = require('express');
-const app= express ();
 const path = require('path');
+const app = express();
 const port = 8080;
-const router=require('./routes/routes')
 
-
+// Middleware para servir archivos estáticos
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(express.static(path.join(__dirname, 'views')));
+
+
+// Importar rutas
+const routes = require('./routes/routes');
+//console.log(registerRoutes)
 
 app.use(express.json())
-app.use('/',router)
+// Usar las rutas
+app.use('/', routes);
 
-app.listen(port, ()=>{
-    console.log('esta'+ port)
-})
+// Iniciar el servidor
+app.listen(port, () => {
+  console.log(`Servidor corriendo en http://localhost:${port}`);
+});

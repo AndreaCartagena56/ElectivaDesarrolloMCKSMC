@@ -1,24 +1,20 @@
 const path = require('path');
 
 class ViewsController {
-    getContactsPage = (req, res) => {
-        res.sendFile(path.join(__dirname, '../views/contacts.html'));
+    // Página principal
+    getIndexPage(req, res) {
+        res.sendFile(path.join(__dirname, '../public/views/index.html'));
     }
 
-    getCookBookPage = (req, res) => {
-        res.sendFile(path.join(__dirname, '../views/cook-book.html'));
+
+    // Página de cocina
+    getCuisinePage(req, res) {
+        res.sendFile(path.join(__dirname, '../public/views/cuisine.html'));
     }
 
-    getCuisinePage = (req, res) => {
-        res.sendFile(path.join(__dirname, '../views/cuisine.html'));
-    }
-
-    getRegistroPage = (req, res) => {
-        res.sendFile(path.join(__dirname, '../views/registro.html'));
-    }
-
-    getWinePage = (req, res) => {
-        res.sendFile(path.join(__dirname, '../views/wine.html'));
+    // Página del recetario
+    getCookBookPage(req, res) {
+        res.sendFile(path.join(__dirname, '../public/views/cook-book.html'));
     }
 }
 
