@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 07-04-2025 a las 00:01:43
+-- Tiempo de generación: 15-04-2025 a las 21:49:19
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -37,6 +37,14 @@ CREATE TABLE `registro` (
   `Contrasena` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Volcado de datos para la tabla `registro`
+--
+
+INSERT INTO `registro` (`Id`, `Documento`, `Tipo_doc`, `Nombre_Completo`, `Correo_Electronico`, `Nombre_de_Usuario`, `Contrasena`) VALUES
+(1, '1035973689', 'CC', 'Paulina Castaño', 'castanoarenasmariapaulina@gmail.com', 'Paulina_Castano', '25022019qA*'),
+(2, '123456878', 'CC', 'Andrea gallo', 'mjjajfhhf@gmail.com', 'bitch_617', 'b8UhEu6nhF74rJf*');
+
 -- --------------------------------------------------------
 
 --
@@ -47,8 +55,8 @@ CREATE TABLE `reserva` (
   `id_reserva` int(11) NOT NULL,
   `Fecha_Reserva` date NOT NULL,
   `Hora_Reserva` time NOT NULL,
-  `Numero_personas` varchar(10) NOT NULL,
-  `id_usuario` int(11) NOT NULL
+  `Numero_personas` varchar(30) NOT NULL,
+  `Nombre_reserva` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -66,8 +74,7 @@ ALTER TABLE `registro`
 -- Indices de la tabla `reserva`
 --
 ALTER TABLE `reserva`
-  ADD PRIMARY KEY (`id_reserva`),
-  ADD KEY `fk_usuario` (`id_usuario`);
+  ADD PRIMARY KEY (`id_reserva`);
 
 --
 -- AUTO_INCREMENT de las tablas volcadas
@@ -77,23 +84,13 @@ ALTER TABLE `reserva`
 -- AUTO_INCREMENT de la tabla `registro`
 --
 ALTER TABLE `registro`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `reserva`
 --
 ALTER TABLE `reserva`
   MODIFY `id_reserva` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- Restricciones para tablas volcadas
---
-
---
--- Filtros para la tabla `reserva`
---
-ALTER TABLE `reserva`
-  ADD CONSTRAINT `fk_usuario` FOREIGN KEY (`id_usuario`) REFERENCES `registro` (`Id`) ON DELETE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
