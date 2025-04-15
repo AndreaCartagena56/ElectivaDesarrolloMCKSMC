@@ -55,7 +55,7 @@ CREATE TABLE `reserva` (
   `id_reserva` int(11) NOT NULL,
   `Fecha_Reserva` date NOT NULL,
   `Hora_Reserva` time NOT NULL,
-  `Numero_personas` varchar(30) NOT NULL,
+  `Numero_personas` int(11) NOT NULL,
   `Nombre_reserva` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
